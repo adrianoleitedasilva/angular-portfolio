@@ -1,4 +1,4 @@
-# Portfolio - Adriano Silva
+# Portfolio
 
 Portfolio pessoal desenvolvido com Angular 17, apresentando experiências profissionais, habilidades técnicas e projetos desenvolvidos.
 
@@ -44,25 +44,25 @@ src/
 
 ## Seções do Portfólio
 
-| Seção | Componente | Descrição |
-| ----- | ---------- | --------- |
-| Header | `HeaderComponent` | Foto, título, localização e links de contato |
-| Conhecimentos | `KnowledgeComponent` | Ícones das tecnologias dominadas |
-| Experiências | `ExperienceComponent` | Histórico profissional em accordion expansível |
-| Projetos | `ProjectsComponent` | Cards de projetos com links (carregado com `@defer`) |
+| Seção         | Componente            | Descrição                                            |
+| ------------- | --------------------- | ---------------------------------------------------- |
+| Header        | `HeaderComponent`     | Foto, título, localização e links de contato         |
+| Conhecimentos | `KnowledgeComponent`  | Ícones das tecnologias dominadas                     |
+| Experiências  | `ExperienceComponent` | Histórico profissional em accordion expansível       |
+| Projetos      | `ProjectsComponent`   | Cards de projetos com links (carregado com `@defer`) |
 
 ## Tema e Estilos
 
 As cores do tema são definidas como variáveis CSS em `src/scss/theme/_variables.scss`:
 
 ```scss
---primary:        #2fbf71  // Verde principal
---primary-010:    #21804d  // Verde escuro
---secondary:      #06628a  // Azul
---secondary-010:  #06374e  // Azul escuro
---black:          #10101a  // Fundo principal
---black-010:      #2a2a30  // Fundo secundário
---grey:           #9b9ba0  // Texto secundário
+--primary: #2fbf71 // Verde principal
+  --primary-010: #21804d // Verde escuro
+  --secondary: #06628a // Azul
+  --secondary-010: #06374e // Azul escuro
+  --black: #10101a // Fundo principal
+  --black-010: #2a2a30 // Fundo secundário
+  --grey: #9b9ba0; // Texto secundário
 ```
 
 ## Como Rodar
@@ -111,17 +111,17 @@ As interfaces TypeScript estão em `src/app/modules/portfolio/interface/`:
 ```typescript
 // Habilidade técnica
 interface IKnowledge {
-  src: string;  // caminho do ícone
-  alt: string;  // nome da tecnologia
+  src: string; // caminho do ícone
+  alt: string; // nome da tecnologia
 }
 
 // Experiência profissional
 interface IExperiences {
   summary: {
-    strong: string;  // cargo/título
-    p: string;       // período
+    strong: string; // cargo/título
+    p: string; // período
   };
-  text: string;      // descrição detalhada
+  text: string; // descrição detalhada
 }
 
 // Projeto
